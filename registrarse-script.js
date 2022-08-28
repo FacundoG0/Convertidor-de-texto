@@ -115,7 +115,7 @@ div_main_inputs.addEventListener("keydown", desmarcar);
 let div_pokerandom = document.createElement('div')
 main.append(div_pokerandom)
 
-div_pokerandom.innerHTML = "<input type='text' id='pokename' placeholder='ingrese nombre de su pokemon'>"
+let pokeinput = div_pokerandom.innerHTML = "<input type='text' id='pokename' placeholder='ingrese nombre de su pokemon'>"
 
 
 let pokerandom = () => {
@@ -136,7 +136,7 @@ let pokerandom = () => {
     
         console.log(pokeimg)
     
-        div_pokerandom.innerHTML = `<img src='${pokeimg}'>`
+        div_pokerandom.innerHTML = `<img src='${pokeimg}'>` + pokeinput
     })
     
 
